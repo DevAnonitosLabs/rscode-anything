@@ -1,0 +1,59 @@
+# Text files: Normalize line endings to LF
+* text=auto
+
+# Treat all files as binary by default
+* binary
+
+# Specific language settings
+
+# Python: Normalize line endings and mark as text
+*.py text eol=lf
+
+# JavaScript/TypeScript: Normalize line endings and mark as text
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+
+# HTML/CSS: Normalize line endings and mark as text
+*.css text eol=lf
+*.html text eol=lf
+
+# JSON/YAML: Normalize line endings and mark as text
+*.yml text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+
+# Shell scripts: Normalize line endings and mark as text
+*.sh text eol=lf
+
+# Windows batch files: Use CRLF for compatibility
+*.bat text eol=crlf
+
+# Images: Treat as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+
+# Fonts: Treat as binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# Archives: Treat as binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+
+# Documentation: Normalize line endings
+*.md text eol=lf
+*.rst text eol=lf
+
+# Ignore merge conflicts for lock files
+package-lock.json merge=union
+yarn.lock merge=union

@@ -1,0 +1,33 @@
+name: 💬 General Discussion
+description: Start a general discussion about the project
+title: "[General] "
+labels: ["discussion", "general"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for starting a discussion! This is a place for general conversation about the project.
+        
+        Please be respectful and follow our [Code of Conduct](https://github.com/your-username/rscode-anything/blob/main/CODE_OF_CONDUCT.md).
+  - type: textarea
+    id: discussion-topic
+    attributes:
+      label: What would you like to discuss?
+      description: Please describe the topic you'd like to discuss
+      placeholder: Share your thoughts, questions, or ideas...
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any additional information that might be helpful
+      placeholder: Add any relevant context, links, or examples...
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Code of Conduct
+      description: By participating in this discussion, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow the Code of Conduct
+          required: true

@@ -1,0 +1,58 @@
+name: 📢 Announcements
+description: Share important project announcements
+title: "[Announcement] "
+labels: ["announcement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for important project announcements, updates, or news.
+  - type: textarea
+    id: announcement-title
+    attributes:
+      label: Announcement Title
+      description: A clear, concise title for your announcement
+      placeholder: Brief title describing the announcement...
+    validations:
+      required: true
+  - type: textarea
+    id: announcement-content
+    attributes:
+      label: Announcement Content
+      description: The main content of your announcement
+      placeholder: Provide the full details of your announcement...
+    validations:
+      required: true
+  - type: dropdown
+    id: announcement-type
+    attributes:
+      label: Type of Announcement
+      description: What kind of announcement is this?
+      options:
+        - Release
+        - Update
+        - Event
+        - Policy Change
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: effective-date
+    attributes:
+      label: Effective Date
+      description: When does this take effect? (if applicable)
+      placeholder: YYYY-MM-DD or "Immediately"
+  - type: textarea
+    id: additional-links
+    attributes:
+      label: Additional Links
+      description: Any relevant links (documentation, blog posts, etc.)
+      placeholder: Add any relevant links...
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Code of Conduct
+      description: By participating in this discussion, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow the Code of Conduct
+          required: true

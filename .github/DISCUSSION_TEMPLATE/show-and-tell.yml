@@ -1,0 +1,63 @@
+name: 🎨 Show & Tell
+description: Share your projects, work, or creations
+title: "[Show & Tell] "
+labels: ["show-and-tell", "community"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share your projects, work, or creations with the community! This is a great place to showcase what you've built.
+  - type: textarea
+    id: project-description
+    attributes:
+      label: What did you build?
+      description: Describe your project or creation
+      placeholder: Tell us about what you've created...
+    validations:
+      required: true
+  - type: textarea
+    id: technologies-used
+    attributes:
+      label: Technologies Used
+      description: What technologies, tools, or frameworks did you use?
+      placeholder: List the main technologies, libraries, or tools you used...
+    validations:
+      required: true
+  - type: textarea
+    id: challenges-faced
+    attributes:
+      label: Challenges & Solutions
+      description: What challenges did you face and how did you solve them?
+      placeholder: Share any interesting problems you solved or challenges you overcame...
+  - type: textarea
+    id: lessons-learned
+    attributes:
+      label: Lessons Learned
+      description: What did you learn from this project?
+      placeholder: Share any insights, tips, or lessons you gained...
+  - type: input
+    id: project-links
+    attributes:
+      label: Project Links
+      description: Links to your project (GitHub, demo, live site, etc.)
+      placeholder: https://your-project.com, https://github.com/your-username/project
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Media
+      description: Add any screenshots, GIFs, or other media
+      placeholder: You can drag and drop images here or use markdown to embed them...
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Anything else you'd like to share
+      placeholder: Additional details, future plans, or anything else...
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Code of Conduct
+      description: By participating in this discussion, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow the Code of Conduct
+          required: true

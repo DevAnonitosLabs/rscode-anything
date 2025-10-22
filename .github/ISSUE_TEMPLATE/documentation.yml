@@ -1,0 +1,86 @@
+name: 📖 Documentation
+description: Report an issue with documentation or suggest improvements
+title: "[Docs] "
+labels: ["documentation", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve our documentation! Please provide details about the documentation issue or improvement.
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: What type of documentation issue is this?
+      options:
+        - Typo or grammatical error
+        - Missing information
+        - Outdated information
+        - Unclear or confusing content
+        - Missing examples
+        - Broken links
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: documentation-issue
+    attributes:
+      label: Documentation Issue
+      description: Describe the documentation problem or improvement needed
+      placeholder: What's wrong with the documentation? What needs to be improved?
+    validations:
+      required: true
+  - type: input
+    id: affected-pages
+    attributes:
+      label: Affected Pages/Sections
+      description: Which pages or sections are affected?
+      placeholder: URLs, file paths, or section names
+    validations:
+      required: true
+  - type: textarea
+    id: current-content
+    attributes:
+      label: Current Content
+      description: What does the current documentation say? (if applicable)
+      placeholder: Copy the current text that needs to be changed...
+  - type: textarea
+    id: suggested-changes
+    attributes:
+      label: Suggested Changes
+      description: How should the documentation be improved?
+      placeholder: Describe what changes should be made or provide the corrected text...
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or Additional Context
+      description: Provide examples, screenshots, or additional context if helpful
+      placeholder: Any examples, screenshots, or additional information that would help...
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this documentation fix?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other relevant information
+      placeholder: Any other details that might be helpful...
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow the Code of Conduct
+          required: true

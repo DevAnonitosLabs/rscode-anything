@@ -1,0 +1,64 @@
+name: ❓ Help & Support
+description: Get help with using the project
+title: "[Help] "
+labels: ["help", "support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reaching out for help! Please provide as much detail as possible so we can assist you effectively.
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the issue you're encountering
+      placeholder: Explain what you're trying to do and what's not working...
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: What steps did you take to encounter this issue?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: Describe what you expected to happen...
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: Describe what actually happened...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Your environment details
+      placeholder: OS, Node version, browser, etc.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other relevant information
+      placeholder: Screenshots, error messages, logs, etc.
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Code of Conduct
+      description: By participating in this discussion, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow the Code of Conduct
+          required: true

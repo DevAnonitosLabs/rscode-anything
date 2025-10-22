@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://github.com/DevAnonitosLab/rscode-anything/wiki
+  - name: 💬 Community Chat
+    url: https://discord.gg/your-discord-invite
+  - name: 🐛 Bug Reports
+    url: https://github.com/DevAnonitosLab/rscode-anything/issues/new?template=bug_report.yml
+  - name: 💡 Feature Requests
+    url: https://github.com/DevAnonitosLab/rscode-anything/issues/new?template=feature_request.yml
